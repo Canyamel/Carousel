@@ -83,73 +83,63 @@
     margin-left: 3px;
 }
 
-.carousel-actions-button-left-small {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+.carousel-actions-button-left {
     cursor: pointer;
     margin-right: 4px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+}
+
+.carousel-actions-button-right {
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.carousel-small  .carousel-actions-button-left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     border-right: 13px solid #003AD0;
 }
 
-.carousel-actions-button-right-small {
+.carousel-small .carousel-actions-button-right {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    cursor: pointer;
-    margin-left: 4px;
-    margin-bottom: 3px;
     border-left: 13px solid #003AD0;
 }
 
-.carousel-actions-button-left-medium {
+.carousel-medium .carousel-actions-button-left {
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    cursor: pointer;
-    margin-right: 4px;
-    margin-bottom: 4px;
     border-right: 20px solid #003AD0;
 }
 
-.carousel-actions-button-right-medium {
+.carousel-medium .carousel-actions-button-right {
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    cursor: pointer;
-    margin-left: 4px;
-    margin-bottom: 4px;
     border-left: 20px solid #003AD0;
 }
 
-.carousel-actions-button-left-large {
+.carousel-large .carousel-actions-button-left {
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
-    cursor: pointer;
-    margin-right: 4px;
-    margin-bottom: 4px;
     border-right: 25px solid #003AD0;
 }
 
-.carousel-actions-button-right-large {
+.carousel-large .carousel-actions-button-right {
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
-    cursor: pointer;
-    margin-left: 4px;
-    margin-bottom: 4px;
     border-left: 25px solid #003AD0;
 }
 
-.carousel-actions-button-left-very-large {
+.carousel-very-large .carousel-actions-button-left {
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
-    cursor: pointer;
-    margin-right: 4px;
     border-right: 30px solid #003AD0;
 }
 
-.carousel-actions-button-right-very-large {
+.carousel-very-large .carousel-actions-button-right {
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
-    cursor: pointer;
-    margin-left: 4px;
     border-left: 30px solid #003AD0;
 }
 
@@ -169,26 +159,27 @@
     cursor: pointer;
 }
 
-.carousel-actions-thumb-point-very-large {
-    width: 15px;
-    height: 15px;
-}
-
-.carousel-actions-thumb-point-large {
-    width: 12px;
-    height: 12px;
-}
-
-.carousel-actions-thumb-point-medium {
-    width: 10px;
-    height: 10px;
-}
-
-.carousel-actions-thumb-point-small {
+.carousel-small .carousel-actions-thumb-point-small {
     width: 6px;
     height: 6px;
 }
 
-.carousel-actions-thumb-point-blue {
+.carousel-medium .carousel-actions-thumb-point {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-large .carousel-actions-thumb-point {
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-very-large .carousel-actions-thumb-point {
+    width: 15px;
+    height: 15px;
+}
+
+
+.carousel-actions-thumb-point-active {
     background-color: #003AD0;
 }
