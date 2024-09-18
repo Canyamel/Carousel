@@ -46,20 +46,20 @@ function MedicalCarousel(props: MedicalCarouselProps): JSX.Element {
           {props.imageSrcArray.map((_, index) => (
             <div
             key={index}
-            className={`carousel-actions-thumb-point carousel-actions-thumb-point-${props.size} ${index === currentPosition ? 'carousel-actions-thumb-point-blue' : ''}`}
+            className={`carousel-actions-thumb-point ${index === currentPosition ? '.carousel-actions-thumb-point-active' : ''}`}
             onClick={() => clickThumb(index)}
           />))}
         </div>
       }
 
       <div className='carousel-actions-container'>
-        {props.buttonNext === undefined && <div className={`carousel-actions-button-left-${props.size}`} onClick={clickButtonPrev}/>}
+        {props.buttonNext === undefined && <div className='carousel-actions-button-left' onClick={clickButtonPrev}/>}
         {props.buttonNext && <div className="carousel-actions-button-left-custom" onClick={clickButtonPrev}>{props.buttonPrev}</div>}
 
         {props.thumbImg &&
           <div className='carousel-actions-thumb-line-image'>
             {props.imageSrcArray.map((imageSrc, index) => (
-              <img className={`carousel-actions-thumb-image carousel-actions-thumb-image-${props.size}`} key={index} src={imageSrc}
+              <img className='carousel-actions-thumb-image' key={index} src={imageSrc}
               alt={props.imageAltArray?.[index] || `Image ${index + 1}`}
               style={{ opacity: index === currentPosition ? '1' : '0.5' }}
               onClick={() => clickThumb(index)}/>))
@@ -67,7 +67,7 @@ function MedicalCarousel(props: MedicalCarouselProps): JSX.Element {
           </div>
         }
 
-        {props.buttonNext === undefined && <div className={`carousel-actions-button-right-${props.size}`} onClick={clickButtonNext}/>}
+        {props.buttonNext === undefined && <div className='carousel-actions-button-right' onClick={clickButtonNext}/>}
         {props.buttonNext && <div className="carousel-actions-button-right-custom" onClick={clickButtonNext}>{props.buttonNext}</div>}
       </div>
     </div>
