@@ -58,6 +58,9 @@
     align-items: center;
     text-align: center;
     margin-bottom: 3px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #003AD0 white;
 }
 
 .carousel-actions-thumb-line-image {
@@ -70,7 +73,7 @@
     height: auto;
     border-radius: 8px;
     margin-left: 5px;
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -117,8 +120,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .carousel-actions-thumb-point {
