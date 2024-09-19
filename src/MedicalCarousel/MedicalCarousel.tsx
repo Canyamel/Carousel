@@ -46,16 +46,15 @@ function MedicalCarousel(props: MedicalCarouselProps): JSX.Element {
           {props.imageSrcArray.map((_, index) => (
             <div
             key={index}
-            className={`carousel-actions-thumb-point ${index === currentPosition ? '.carousel-actions-thumb-point-active' : ''}`}
+            className={`carousel-actions-thumb-point ${index === currentPosition ? 'carousel-actions-thumb-point-active' : ''}`}
             onClick={() => clickThumb(index)}
           />))}
         </div>
       }
 
       <div className='carousel-actions-container'>
-        {props.buttonNext === undefined && <div className='carousel-actions-button-left' onClick={clickButtonPrev}/>}
-        {props.buttonNext && <div className="carousel-actions-button-left-custom" onClick={clickButtonPrev}>{props.buttonPrev}</div>}
-
+      {props.buttonNext === undefined && <button className='carousel-actions-button' onClick={clickButtonPrev}>&#9668;</button>}
+      {props.buttonNext && <div className="carousel-actions-button-left-custom" onClick={clickButtonPrev}>{props.buttonPrev}</div>}
         {props.thumbImg &&
           <div className='carousel-actions-thumb-line-image'>
             {props.imageSrcArray.map((imageSrc, index) => (
@@ -66,9 +65,8 @@ function MedicalCarousel(props: MedicalCarouselProps): JSX.Element {
             }
           </div>
         }
-
-        {props.buttonNext === undefined && <div className='carousel-actions-button-right' onClick={clickButtonNext}/>}
-        {props.buttonNext && <div className="carousel-actions-button-right-custom" onClick={clickButtonNext}>{props.buttonNext}</div>}
+              {props.buttonNext === undefined && <button className='carousel-actions-button' onClick={clickButtonNext}>&#9658;</button>}
+      {props.buttonNext && <div className="carousel-actions-button-right-custom" onClick={clickButtonNext}>{props.buttonNext}</div>}
       </div>
     </div>
   );
