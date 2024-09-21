@@ -5,7 +5,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-light{
+.carousel-light {
     background-color: #fff;
     color: #000;
 }
@@ -58,9 +58,23 @@
     align-items: center;
     text-align: center;
     margin-bottom: 3px;
-
     scrollbar-width: thin;
-    scrollbar-color: #003AD0 transparent;
+}
+
+.carousel-light .carousel-actions-container {
+    scrollbar-color: #000 transparent;
+}
+
+.carousel-dark .carousel-actions-container {
+    scrollbar-color: #fff transparent;
+}
+
+.carousel-primary .carousel-actions-container {
+scrollbar-color: #003AD0 transparent;
+}
+
+.carousel-secondary .carousel-actions-container {
+    scrollbar-color: #fff transparent;
 }
 
 .carousel-actions-thumb-line-image {
@@ -86,14 +100,37 @@
 }
 
 .carousel-actions-button {
-    color: #003AD0;
     border: none;
     background: transparent;
     margin-left: 5px;
     margin-right: 5px;
-    text-shadow: 0px 0px 5px lightslategray;
     cursor: pointer;
     border-radius: 50%;
+}
+
+.carousel-light .carousel-actions-button {
+    color: #000;
+    text-shadow: 0px 0px 5px lightslategray;
+}
+
+.carousel-dark .carousel-actions-button {
+    color: #fff;
+    text-shadow: 0px 0px 5px lightslategray;
+}
+
+.carousel-primary .carousel-actions-button {
+    color: #003AD0;
+    text-shadow: 0px 0px 5px lightslategray;
+}
+
+.carousel-secondary .carousel-actions-button {
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(151, 152, 153);
+}
+
+.carousel-small {
+    padding: 8px 8px 0 8px;
+    width: 15rem;
 }
 
 .carousel-actions-button:active  {
@@ -131,8 +168,36 @@
     cursor: pointer;
 }
 
-.carousel-actions-thumb-point-active {
+.carousel-light .carousel-actions-thumb-point{
+    background-color: lightgray;
+}
+
+.carousel-dark .carousel-actions-thumb-point{
+    background-color: rgb(140, 140, 140);
+}
+
+.carousel-primary .carousel-actions-thumb-point{
+    background-color: lightgray;
+}
+
+.carousel-secondary .carousel-actions-thumb-point{
+    background-color: rgb(189, 185, 185);
+}
+
+.carousel-light .carousel-actions-thumb-point-active{
+    background-color: #000;
+}
+
+.carousel-dark .carousel-actions-thumb-point-active{
+    background-color: #fff;
+}
+
+.carousel-primary .carousel-actions-thumb-point-active{
     background-color: #003AD0;
+}
+
+.carousel-secondary .carousel-actions-thumb-point-active{
+    background-color: #fff;
 }
 
 .carousel-small .carousel-actions-thumb-point {
