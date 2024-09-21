@@ -163,25 +163,28 @@ scrollbar-color: #003AD0 transparent;
 
 .carousel-actions-thumb-point {
     border-radius: 50%;
-    background-color: lightgray;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .carousel-light .carousel-actions-thumb-point{
     background-color: lightgray;
+    box-shadow: 0 1px 2px lightslategray;
 }
 
 .carousel-dark .carousel-actions-thumb-point{
     background-color: rgb(140, 140, 140);
+    box-shadow: 0 1px 2px lightslategray;
 }
 
 .carousel-primary .carousel-actions-thumb-point{
     background-color: lightgray;
+    box-shadow: 0 1px 2px lightslategray;
 }
 
 .carousel-secondary .carousel-actions-thumb-point{
     background-color: rgb(189, 185, 185);
+    box-shadow: 0 1px 2px rgb(151, 152, 153);
 }
 
 .carousel-light .carousel-actions-thumb-point-active{
