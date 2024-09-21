@@ -176,7 +176,7 @@ export const CustomTheme = {
     styleThumbPoint: { background: '#9fd3e3' },
     styleThumbActionPoint: { background: '#408ca3' },
     styleContainer: { 'scrollbar-color': '#408ca3 transparent' },
-    styleSizeThumbImg: '25%',
+    styleThumbImg: '25%',
     thumbImg: true,
     thumbPoint: true
   }
