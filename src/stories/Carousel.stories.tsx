@@ -111,6 +111,28 @@ export const ThumbAll = {
   }
 };
 
+export const ThumbAllWithCustomColor = {
+  args: {
+    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
+    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
+    theme: 'primary',
+    size: 'medium',
+    thumbImg: true,
+    thumbPoint: true,
+    styleLeftBotton: { color: '#408ca3' },
+    styleRightBotton: { color: '#408ca3' },
+    styleThumbPoint: { background: '#9fd3e3' },
+    styleThumbActionPoint: { background: '#408ca3' },
+    styleContainer: { 'scrollbar-color': '#408ca3 transparent' },
+    styleSizeThumbImg: '25%'
+  }
+};
+
 export const Dark = {
   args: {
     imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
