@@ -19,7 +19,7 @@ export interface MedicalCarouselProps {
   buttonNext?: React.ReactNode;
 
   thumbImg?: boolean;
-  styleSizeThumbImg?: string;
+  styleThumbImg?: string;
   thumbPoint?: boolean;
 
   onClick?: () => void;
@@ -68,7 +68,7 @@ function MedicalCarousel(props: MedicalCarouselProps): JSX.Element {
             {props.imageSrcArray.map((imageSrc, index) => (
               <img className='carousel-actions-thumb-image' key={index} src={imageSrc}
               alt={props.imageAltArray?.[index] || `Image ${index + 1}`}
-              style={{width: props.styleSizeThumbImg, opacity: index === currentPosition ? '1' : '0.5'}}
+              style={{width: props.styleThumbImg, opacity: index === currentPosition ? '1' : '0.5'}}
               onClick={() => clickThumb(index)}/>))
             }
           </div>
