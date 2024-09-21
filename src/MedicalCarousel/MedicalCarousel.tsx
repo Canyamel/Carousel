@@ -6,6 +6,12 @@ export interface MedicalCarouselProps {
   imageAltArray?: string[];
 
   style?: React.CSSProperties;
+  styleLeftBotton?: React.CSSProperties;
+  styleRightBotton?: React.CSSProperties;
+  styleThumbPoint?: React.CSSProperties;
+  styleThumbActionPoint?: React.CSSProperties;
+  styleContainer?: React.CSSProperties;
+
   theme?: 'light' | 'dark' | 'primary' | 'secondary' | 'custom';
   size?: 'small' | 'medium' | 'large' | 'very-large';
 
@@ -13,6 +19,7 @@ export interface MedicalCarouselProps {
   buttonNext?: React.ReactNode;
 
   thumbImg?: boolean;
+  styleSizeThumbImg?: string;
   thumbPoint?: boolean;
 
   onClick?: () => void;
@@ -47,25 +54,26 @@ function MedicalCarousel(props: MedicalCarouselProps): JSX.Element {
             <div
             key={index}
             className={`carousel-actions-thumb-point ${index === currentPosition ? 'carousel-actions-thumb-point-active' : ''}`}
+            style={{...(index === currentPosition ? props.styleThumbActionPoint : props.styleThumbPoint)}}
             onClick={() => clickThumb(index)}
           />))}
         </div>
       }
 
-      <div className='carousel-actions-container'>
-      {props.buttonNext === undefined && <button className='carousel-actions-button' onClick={clickButtonPrev}>&#9668;</button>}
+      <div className='carousel-actions-container' style={props.styleContainer}>
+      {props.buttonNext === undefined && <button className='carousel-actions-button' style={props.styleLeftBotton} onClick={clickButtonPrev}>&#9668;</button>}
       {props.buttonNext && <div className="carousel-actions-button-left-custom" onClick={clickButtonPrev}>{props.buttonPrev}</div>}
         {props.thumbImg &&
           <div className='carousel-actions-thumb-line-image'>
             {props.imageSrcArray.map((imageSrc, index) => (
               <img className='carousel-actions-thumb-image' key={index} src={imageSrc}
               alt={props.imageAltArray?.[index] || `Image ${index + 1}`}
-              style={{ opacity: index === currentPosition ? '1' : '0.5' }}
+              style={{width: props.styleSizeThumbImg, opacity: index === currentPosition ? '1' : '0.5'}}
               onClick={() => clickThumb(index)}/>))
             }
           </div>
         }
-              {props.buttonNext === undefined && <button className='carousel-actions-button' onClick={clickButtonNext}>&#9658;</button>}
+      {props.buttonNext === undefined && <button className='carousel-actions-button' style={props.styleRightBotton} onClick={clickButtonNext}>&#9658;</button>}
       {props.buttonNext && <div className="carousel-actions-button-right-custom" onClick={clickButtonNext}>{props.buttonNext}</div>}
       </div>
     </div>
