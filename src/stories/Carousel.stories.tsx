@@ -65,63 +65,6 @@ export const VeryLarge = {
   }
 };
 
-export const Dark = {
-  args: {
-    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
-    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
-    theme: 'dark',
-    size: 'medium'
-  }
-};
-
-export const Light = {
-  args: {
-    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
-    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
-    theme: 'light',
-    size: 'medium'
-  }
-};
-
-export const SecondaryTheme = {
-  args: {
-    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
-    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
-    theme: 'secondary',
-    size: 'medium'
-  }
-};
-
-export const CustomTheme = {
-  args: {
-    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
-                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
-    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
-    theme: 'secondary',
-    style: { backgroundColor: '#ffcc00', color: '#333' },
-    size: 'medium'
-  }
-};
-
 export const ThumbImage = {
   args: {
     imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
@@ -168,7 +111,7 @@ export const ThumbAll = {
   }
 };
 
-export const ThumbAllWithCustomColor = {
+export const Dark = {
   args: {
     imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
                     "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
@@ -177,16 +120,65 @@ export const ThumbAllWithCustomColor = {
                     "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
                     "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
     imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
-    theme: 'primary',
+    theme: 'dark',
     size: 'medium',
     thumbImg: true,
-    thumbPoint: true,
+    thumbPoint: true
+  }
+};
+
+export const Light = {
+  args: {
+    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
+    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
+    theme: 'light',
+    size: 'medium',
+    thumbImg: true,
+    thumbPoint: true
+  }
+};
+
+export const SecondaryTheme = {
+  args: {
+    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
+    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
+    theme: 'secondary',
+    size: 'medium',
+    thumbImg: true,
+    thumbPoint: true
+  }
+};
+
+export const CustomTheme = {
+  args: {
+    imageSrcArray: ["http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_1.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_3.png",
+                    "http://msa.mephi.ru/media/originalUZI/2024/4084c1855f/pngs/slide_4.png"],
+    imageAltArray: ["Placeholder Image 1", "Placeholder Image 2", "Placeholder Image 3"],
+    theme: 'secondary',
+    size: 'medium',
+    style: { backgroundColor: '#cce7f0', color: '#333' },
     styleLeftBotton: { color: '#408ca3' },
     styleRightBotton: { color: '#408ca3' },
     styleThumbPoint: { background: '#9fd3e3' },
     styleThumbActionPoint: { background: '#408ca3' },
     styleContainer: { 'scrollbar-color': '#408ca3 transparent' },
-    styleSizeThumbImg: '25%'
+    styleSizeThumbImg: '25%',
+    thumbImg: true,
+    thumbPoint: true
   }
 };
 
